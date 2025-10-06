@@ -23,26 +23,26 @@ public class Ejercicios2 {
 	double tax;
 	double newPrice;
 		
-	Scanner sc = new Scanner (System.in);
+	Scanner reader = new Scanner (System.in);
 	//DYSPLAY program title
 	System.out.println("Program Title");
 	//DYSPLAY prompt for price
 	System.out.println("price");
 	//ENTER price
 	System.out.println("Enter price");
-	price = sc.nextDouble();
+	price = reader.nextDouble();
 	//DYSPLAY prompt for tax
 	System.out.println("tax");
 	//ENTER tax
 	System.out.println("Enter tax");
-	tax = sc.nextDouble();
+	tax = reader.nextDouble();
 	//SET price TO price * (1 + tax/100)
-	newPrice = (price + (price + tax)/100);
+	newPrice = (price + price) + tax/100;
 	//DYSPLAY new price
 	System.out.println("new price");
-	System.out.println(newPrice);
+	System.out.println((int)newPrice);
 	
-	sc.close();
+	reader.close();
 		
 	}
 
